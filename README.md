@@ -1,12 +1,12 @@
 # Numou Tenancy
 
-Tenant lifecycle, tenant membership, tenant settings, provisioning and tenant-context capability.
+Historical staging repository for the Tenancy source transfer. The canonical Tenancy capability remains in the `tenancy/` reactor of [andalus-ai/numu](https://github.com/andalus-ai/numu), alongside Foundation.
 
 ## Repository status
 
-**Status:** Source transferred; independent build verification pending shared Maven package availability.
+**Status:** Transitional staging only — not the canonical source of truth and not an independently releasable capability.
 
-The first source transfer is staged from `andalus-ai/numu/tenancy` into this repository. It contains the source files under that root, including domain, SPI, application, in-memory adapter and domain tests. The root POM and capability BOM are repository-local Maven aggregators.
+A historical copy of the source files from `andalus-ai/numu/tenancy` was transferred here. The Core repository retains the canonical `tenancy/` source reactor. This repository is retained to preserve migration history and reviewability; it must not become a competing implementation or release stream.
 
 - Source repository: https://github.com/andalus-ai/numu
 - Source root: `tenancy/`
@@ -16,7 +16,7 @@ The first source transfer is staged from `andalus-ai/numu/tenancy` into this rep
 
 This is a staged extraction, not yet an independently verified release. The source monorepo remains authoritative until the acceptance criteria below pass.
 
-## Maven dependency model
+## Historical Maven metadata\n\nThe POMs and workflow below describe the original extraction experiment only. They are retained for provenance and are not an endorsed independent release path. Do not run the publication/build steps as a production release process.\n\n## Maven dependency model
 
 This repository uses:
 
@@ -63,7 +63,7 @@ Identity owns canonical person and organization subjects. Security owns authenti
 
 Organization membership and tenant membership are different relationships. A person may belong to an organization without belonging to every tenant associated with that organization, and a tenant membership must not silently grant business permissions.
 
-## Extraction acceptance checklist
+## Historical extraction record
 
 - [x] Source root transferred into this repository.
 - [x] Repository-local root POM and capability BOM created.
