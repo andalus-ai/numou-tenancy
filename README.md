@@ -4,7 +4,7 @@ Tenant lifecycle, tenant membership, tenant settings, provisioning and tenant-co
 
 ## Repository status
 
-<badge>Source transferred — build pending shared artifacts</badge>
+**Status:** Source transferred — build pending shared artifacts
 
 The first source transfer is staged from `andalus-ai/numu/tenancy` into this repository. The transfer contains all 75 source files under that root, including domain, SPI, application, adapter and domain tests. The monorepo root POM and legacy BOM were replaced with repository-local Maven aggregators.
 
